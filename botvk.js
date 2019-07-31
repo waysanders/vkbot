@@ -1,13 +1,17 @@
-const { Bot, Keyboard } = require('node-vk-bot')
+const vk = require('node-vk-bot-api');
+const fs = require('fs');
 
-const bot = new Bot({
-  token: process.env.vktoken,
-  group_id: 182036184
-}).start()
+let settings = process.env;
+if (fs.existsSync('./settings.json')) settings = require('./settings.json');
 
-bot.get(/Hi|Hello|Hey/i, (message, exec, reply) => {
-  const keyboard = new Keyboard().addButton('Hi!')
-  const options =  { forward_messages: message.id, keyboard }
+const bot = new vk(settings.vktoken);
+let text;
 
-  reply('Hello!', options)
-})
+bot.startPolling(() => {
+  console.log('[BOT] Бот успешно запущен!');
+});
+
+bot.on((answer) => {
+    let message = answer.message;
+    if (message.text == '!id') return answer.reply('Peer ID Беседы: ' + message.peer_id + ' | From ID ' + message.from_id);
+});
