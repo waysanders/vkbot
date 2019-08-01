@@ -28,6 +28,9 @@ bot.on((answer) => {
     if (message.text == 'пиздец') return answer.reply('[System anti-mat] Система анти-мат, не матерись, маме расскажу!');
     if (message.text == 'долбаеб') return answer.reply('[System anti-mat] Система анти-мат, не матерись, маме расскажу!');
     if (message.text == 'пиздабол') return answer.reply('[System anti-mat] Система анти-мат, не матерись, маме расскажу!');
+    if (message.text == '+peer') return answer.reply('[Info] Peer ID - ' + massage.peer_id);
+    if (message.text == '+from') return answer.reply('[Info] From ID - ' + massage.from_id);
+    if (message.text == '+user') return answer.reply('[Info] You ID - ' + massage.user_id);
 });
     
 bot.command('+peer', (ctx) => {
