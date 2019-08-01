@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-vk-bot": "^1.2.3",
+    "discord.js": "^11.5.1",
+    "node-vk-bot-api": "^2.4.11",
     "save": "^2.4.0"
   }
 }

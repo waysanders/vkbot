@@ -48,3 +48,5 @@ bot.command('+dz', (ctx) => {
 bot.command('+schedule', (ctx) => {
     ctx.reply(`тут будет наше расписание`)
 });  
+
+
