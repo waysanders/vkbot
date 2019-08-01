@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const vk = require('node-vk-bot-api');
 const fs = require('fs');
-const app = express()
+
 
 let settings = process.env;
 if (fs.existsSync('./settings.json')) settings = require('./settings.json');
