@@ -1,5 +1,4 @@
-const express = require('express')
-const bodyParser = require('body-parser')
+
 const vk = require('node-vk-bot-api');
 const fs = require('fs');
 
