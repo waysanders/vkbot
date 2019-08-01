@@ -1,7 +1,5 @@
-
 const vk = require('node-vk-bot-api');
 const fs = require('fs');
-
 
 let settings = process.env;
 if (fs.existsSync('./settings.json')) settings = require('./settings.json');
@@ -11,9 +9,14 @@ const bot = new vk(settings.vktoken);
 
 bot.startPolling(() => {
     console.log('[BOT] Бот успешно запущен!');
+    console.log('[BOT] Started')
 });
 
-
+const getSessionKey = (ctx) => {
+    const userId = ctx.message.from_id || ctx.message.user_id;
+   
+    return `${userId}:${userId}`;
+};
 
 bot.on((answer) => { 
    let message = answer.message; 
@@ -50,5 +53,8 @@ bot.command('+dz', (ctx) => {
 bot.command('+schedule', (ctx) => {
     ctx.reply(`тут будет наше расписание`)
 });  
+
+
+bot.sendMessage([234621418, 525097367], '[Sanders prod.®] Successful launch!\n [Sanders prod.®] Я запустился, рестарт прошел успешно\n [Sanders prod.®] Successful restart!')
 
 
