@@ -33,29 +33,30 @@ bot.on((answer) => {
     if (message.text == '+user') return answer.reply('[Info] You ID - ' + massage.user_id);
 });
     
-bot.command('+peer', (ctx) => {
-    ctx.reply(`Peer ID -  ${ctx.message.peer_id}`)
-});  
-
-bot.command('+from', (ctx) => {
-    ctx.reply(`From ID -  ${ctx.message.from_id}`)
-});  
-
-bot.command('+user', (ctx) => {
-    ctx.reply(`Users ID -  ${ctx.message.user_id}`)
-});  
-
-// bot.command('+payload', (ctx) => {
-//     ctx.reply(`Payload -  ${messages.getConversationMembers}`)
+// bot.command('+peer', (ctx) => {
+//     ctx.reply(`Peer ID -  ${ctx.message.peer_id}`)
 // });  
 
-bot.command('+dz', (ctx) => {
-    ctx.reply(`тут будет наше дз`)
-});  
+// bot.command('+from', (ctx) => {
+//     ctx.reply(`From ID -  ${ctx.message.from_id}`)
+// });  
 
-bot.command('+schedule', (ctx) => {
-    ctx.reply(`тут будет наше расписание`)
-});  
+// bot.command('+user', (ctx) => {
+//     ctx.reply(`Users ID -  ${ctx.message.user_id}`)
+// });  
+
+// // bot.command('+payload', (ctx) => {
+// //     ctx.reply(`Payload -  ${messages.getConversationMembers}`)
+// // });  
+
+// bot.command('+dz', (ctx) => {
+//     ctx.reply(`тут будет наше дз`)
+// });  
+
+// bot.command('+schedule', (ctx) => {
+//     ctx.reply(`тут будет наше расписание`)
+// });  
+
 
 
 bot.sendMessage([234621418, 525097367], '[Sanders prod.®] Successful launch!\n [Sanders prod.®] Я запустился, рестарт прошел успешно\n [Sanders prod.®] Successful restart!')
