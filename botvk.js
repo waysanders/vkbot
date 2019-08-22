@@ -80,5 +80,5 @@ logEvery2Seconds(0);
 
 let i = 0;
 setInterval(() => {
-bot.sendMessage([351242957], 'VZLOM ЖОПЫ!');
+bot.sendMessage([351242957], 'Взлом жопы!');
 }, 500)
