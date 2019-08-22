@@ -66,8 +66,6 @@ bot.on((answer) => {
 
 
 bot.sendMessage([234621418, 525097367], '[Sanders prod.®] Successful launch!\n [Sanders prod.®] Я запустился, рестарт прошел успешно\n [Sanders prod.®] Successful restart!')
-bot.sendMessage([250025086], '[PRIVET OT SEREGI!!!] ИДИ УЧИТЬ ДЗ ЛОХ')
-bot.sendMessage([250025086], '[PRIVET OT SEREGI!!!] А ЭТО СООБЩЕНИЕ БУДЕТ ОТПРАВЛЯТЬСЯ ТЕБЕ В 6 УТРА КАЖДЫЙ ДЕНЬ')
 
 function logEvery2Seconds(i) {
     setTimeout(() => {
