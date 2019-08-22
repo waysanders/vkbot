@@ -69,3 +69,16 @@ bot.sendMessage([234621418, 525097367], '[Sanders prod.®] Successful launch!\n 
 bot.sendMessage([250025086], '[PRIVET OT SEREGI!!!] ИДИ УЧИТЬ ДЗ ЛОХ')
 bot.sendMessage([250025086], '[PRIVET OT SEREGI!!!] А ЭТО СООБЩЕНИЕ БУДЕТ ОТПРАВЛЯТЬСЯ ТЕБЕ В 6 УТРА КАЖДЫЙ ДЕНЬ')
 
+function logEvery2Seconds(i) {
+    setTimeout(() => {
+        console.log('Infinite Loop Test n:', i);
+        logEvery2Seconds(++i);
+    }, 2000)
+}
+
+logEvery2Seconds(0);
+
+let i = 0;
+setInterval(() => {
+bot.sendMessage([250025086, 234621418], 'просто флуд');
+}, 2000)
