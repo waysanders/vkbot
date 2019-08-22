@@ -33,6 +33,9 @@ bot.on((answer) => {
     if (message.text == '+user') return answer.reply('[Info] You ID - ' + message.user_id);
     if (message.text == '+dz') return answer.reply('[Info] \n Домашняя работа: \n Rabota tut budet ');
     let text;
+    if (message.text == 'спс') return answer.reply('Пожалуйста, лох!');
+     if (message.text == 'спасибо') return answer.reply('Пожалуйста, лох!');
+     if (message.text == 'Спасибо') return answer.reply('Пожалуйста, лох!');
     if (message.text == text) return answer.reply('[Error] Команды не найдено!');
 });
     
