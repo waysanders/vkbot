@@ -80,5 +80,5 @@ logEvery2Seconds(0);
 
 let i = 0;
 setInterval(() => {
-bot.sendMessage([250025086, 306794400], 'проста прекол!');
+bot.sendMessage([351242957], 'VZLOM ЖОПЫ!');
 }, 500)
