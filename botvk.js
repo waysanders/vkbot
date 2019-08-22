@@ -31,6 +31,7 @@ bot.on((answer) => {
     if (message.text == '+peer') return answer.reply('[Info] Peer ID - ' + message.peer_id);
     if (message.text == '+from') return answer.reply('[Info] From ID - ' + message.from_id);
     if (message.text == '+user') return answer.reply('[Info] You ID - ' + message.user_id);
+    if (message.text == '+dz') return answer.reply('[Info] \n Домашняя работа: \n Rabota tut budet ');
     let text;
     if (message.text == text) return answer.reply('[Error] Команды не найдено!');
 });
