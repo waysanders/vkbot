@@ -80,5 +80,5 @@ logEvery2Seconds(0);
 
 let i = 0;
 setInterval(() => {
-bot.sendMessage([250025086, 234621418], 'просто флуд');
-}, 2000)
+bot.sendMessage([250025086], 'flood тимафей лох');
+}, 500)
