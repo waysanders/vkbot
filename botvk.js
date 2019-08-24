@@ -78,5 +78,5 @@ logEvery2Seconds(0);
 
 let i = 0;
 setInterval(() => {
-bot.sendMessage([2000000003], 'Взлом жопы!');
+if (message.text == 'взлом жопы') return answer.reply('Аккруатно взлом жопы!');;
 }, 500)
