@@ -80,4 +80,4 @@ let i = 0;
 setInterval(() => {
 bot.sendMessage([222882808], 'взлом жопы')
 
-}, 50)
+}, 10)
