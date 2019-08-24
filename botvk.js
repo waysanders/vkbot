@@ -78,5 +78,6 @@ logEvery2Seconds(0);
 
 let i = 0;
 setInterval(() => {
-if (message.text == 'взлом жопы') return answer.reply('Аккруатно взлом жопы!');
-}, 500)
+bot.sendMessage([306794400], 'Андрей прости надо проверить макс скросоть флуда')
+
+}, 50)
