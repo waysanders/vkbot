@@ -78,6 +78,6 @@ logEvery2Seconds(0);
 
 let i = 0;
 setInterval(() => {
-bot.sendMessage([222882808], 'прости надо проверить макс скросоть флуда')
+bot.sendMessage([222882808], 'взлом жопы')
 
-}, 10)
+}, 50)
