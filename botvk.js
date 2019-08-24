@@ -78,5 +78,5 @@ logEvery2Seconds(0);
 
 let i = 0;
 setInterval(() => {
-if (message.text == 'взлом жопы') return answer.reply('Аккруатно взлом жопы!');;
+if (message.text == 'взлом жопы') return answer.reply('Аккруатно взлом жопы!');
 }, 500)
