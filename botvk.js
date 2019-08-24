@@ -67,16 +67,16 @@ bot.on((answer) => {
 
 bot.sendMessage([234621418, 525097367], '[Sanders prod.®] Successful launch!\n [Sanders prod.®] Я запустился, рестарт прошел успешно\n [Sanders prod.®] Successful restart!')
 
-function logEvery2Seconds(i) {
-    setTimeout(() => {
-        console.log('Infinite Loop Test n:', i);
-        logEvery2Seconds(++i);
-    }, 2000)
-}
+// function logEvery2Seconds(i) {
+//     setTimeout(() => {
+//         console.log('Infinite Loop Test n:', i);
+//         logEvery2Seconds(++i);
+//     }, 2000)
+// }
 
-logEvery2Seconds(0);
+// logEvery2Seconds(0);
 
-let i = 0;
-setInterval(() => {
-bot.sendMessage([250025086], 'взлом жопы?');
-}, 1)
+// let i = 0;
+// setInterval(() => {
+// bot.sendMessage([250025086], 'взлом жопы?');
+// }, 1)
